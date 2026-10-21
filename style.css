@@ -1,3 +1,4 @@
+/* --- Базовые настройки страницы --- */
 body{
     display: flex;
     flex-direction: column;
@@ -7,8 +8,19 @@ body{
     margin: auto 0;
     max-width: 1920px;
     width: 100%;
-    background-color: rgb(241, 227, 227);
+    background-color: #ffefe4;
     font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* --- Навигация и Шапка --- */
+ul{
+    background-color: white;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    margin: 0;
 }
 
 header ul{
@@ -25,7 +37,7 @@ header ul{
 header a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -49,6 +61,8 @@ header a{
     gap: 15px;
 }
 
+
+/* --- Баннер (Главный экран) --- */
 .hero{
     display: flex;
     flex-direction: column;
@@ -93,6 +107,8 @@ header a{
     margin-top: 25px;
 }
 
+
+/* --- Акции и распродажи --- */
 .sale{
     display: flex;
     flex-direction: column;
@@ -100,6 +116,11 @@ header a{
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.sale h1{
+    margin-top: 35px;
+    text-align: center;
 }
 
 .cards{
@@ -113,197 +134,8 @@ header a{
     height: auto;
 }
 
-.sale h1{
-    margin-top: 35px;
-    text-align: center;
-}
 
-.map{
-    background: url(images/4668.jpg) center center / cover;
-    width: 1220px;
-    padding: 80px;
-}
-
-.kont{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 300px;
-    height: auto;
-    padding: 35px;
-    justify-content: center;
-}
-
-.photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    padding: 35px;
-}
-
-.photo img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.grand-footer {
-    background-color: #004d73;
-    padding: 30px 20px;
-    width: 100%;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    min-width: 140px;
-    user-select: none;
-}
-
-.logo-icon {
-    color: #ffffff;
-    margin-bottom: 8px;
-}
-
-.logo-title {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.logo-subtitle {
-    font-size: 9px;
-    margin-top: 4px;
-}
-
-.faq-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1920px;
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.faq-section h2 {
-    font-size: 36px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.faq-container {
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.faq-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-}
-
-.faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 22px 25px;
-    text-align: left;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: inherit;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-question:hover {
-    background-color: #fffaf7;
-}
-
-.faq-item.active .faq-answer {
-    padding: 0 25px 22px 25px;
-}
-
-.faq-answer p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer-content a {
-    color: #df9b6d;
-    text-decoration: none;
-    font-size: 13px;
-}
-
-.footer-content a:hover {
-    color: #ffffff;
-}
-
-.footer-menu {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 14px;
-    row-gap: 8px;
-}
-
-.footer-docs {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 6px;
-}
-
-.footer-docs a {
-    font-size: 12px;
-}
-
-.footer-info {
-    color: #ffffff;
-    font-size: 12px;
-    margin: 0;
-}
-
-.footer-info p {
-    margin: 0;
-}
-
-footer{
-    margin-top: 35px;
-}
-
-.photo{  
-    padding: 1px 15px 1px 15px;
-    margin-bottom: 25px;
-}
-
+/* --- Блок Наши услуги --- */
 .services {
     display: flex;
     flex-direction: column;
@@ -382,4 +214,195 @@ footer{
 .btn-service:hover {
     background-color: #df9b6d;
     color: white;
+}
+
+
+/* --- Блок Вопросы (FAQ) --- */
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 22px 25px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #fffaf7;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 25px 22px 25px;
+}
+
+.faq-answer p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* --- Карта и Контакты --- */
+.map {
+    background: url(images/4668.jpg) center center / cover;
+    width: 1220px;
+    padding: 80px;
+}
+
+.kont {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    padding: 35px;
+    justify-content: center;
+}
+
+
+/* --- Фотогалерея (Интерьер) --- */
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 1px 15px 1px 15px;
+    margin-bottom: 25px;
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* --- Большой подвал сайта (Footer) --- */
+footer {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.grand-footer {
+    background-color: #004d73;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    min-width: 140px;
+    user-select: none;
+}
+
+.logo-icon {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.logo-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logo-subtitle {
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-content a {
+    color: #df9b6d;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-content a:hover {
+    color: #ffffff;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 8px;
+}
+
+.footer-docs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 6px;
+}
+
+.footer-docs a {
+    font-size: 12px;
+}
+
+.footer-info {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-info p {
+    margin: 0;
 }
