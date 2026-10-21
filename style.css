@@ -11,10 +11,6 @@ body{
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-header .nav{
-    padding: 2px 25px 2px 25px;
-}
-
 header ul{
     display: flex;
     flex-direction: row;
@@ -23,6 +19,7 @@ header ul{
     width: 1440px;
     justify-items: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 header a{
@@ -35,6 +32,11 @@ header a{
 .logo{
     width: auto;
     height: 80px;
+}
+
+.slova:hover{
+    font-size: 22px;
+    border-bottom: black 1px solid;
 }
 
 .imgsm{
